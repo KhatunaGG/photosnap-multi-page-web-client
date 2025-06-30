@@ -8,14 +8,14 @@ const Nav = () => {
         <Image src={"/assets/logo.jpg"} alt={"Logo"} width={170} height={16} />
       </div>
 
-      <div className="items-center gap-[37px] hidden md:flex">
+      <div className="items-center gap-[37px] hidden md:flex cursor-pointer">
         <h4 className="heading-h4 uppercase">stories</h4>
         <h4 className="heading-h4 uppercase">feature</h4>
         <h4 className="heading-h4 uppercase">pricing</h4>
       </div>
 
       <div className="">
-        <button className="text-[12px] uppercase text-white bg-black py-3 px-6 tracking-[2px] hidden sm:flex">
+        <button className="text-[12px] uppercase text-white bg-black py-3 px-6 tracking-[2px] hidden sm:flex hover:bg-[#DFDFDF] hover:text-black/70 transition-colors duration-300 ease-in-out">
           get an invite
         </button>
         <Burger />

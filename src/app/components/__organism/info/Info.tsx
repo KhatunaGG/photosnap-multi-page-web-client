@@ -20,7 +20,7 @@ const Info = () => {
             return (
               <div
                 key={i}
-                className="flex flex-col gap-12 items-center text-center justify-between"
+                className="flex flex-col gap-12 items-center text-center justify-between hover:scale-95 transition duration-300 cursor-pointer "
               >
                 {Icon && <Icon />}
                 <div className="DIV w-full flex flex-col gap-4 ">

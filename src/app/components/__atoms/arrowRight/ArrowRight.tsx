@@ -1,11 +1,12 @@
 import React from "react";
 
 export type ArrowRightPropsType = {
-  bg: string;
+  textColor?: string;
+
 };
 
-const ArrowRight = ({ bg }: ArrowRightPropsType) => {
-
+const ArrowRight = ({ textColor }: ArrowRightPropsType) => {
+  const strokeColor = textColor === "text-white" ? "white" : "black";
   return (
     <svg
       width="42"
@@ -17,12 +18,12 @@ const ArrowRight = ({ bg }: ArrowRightPropsType) => {
       <path
         d="M0 7H41.864"
         // stroke="white"
-        stroke={bg === "text-white" ? "white" : "black"}
+        stroke={strokeColor}
       />
       <path
         d="M35.4282 1L41.4282 7L35.4282 13"
         // stroke="white"
-      stroke={bg === "text-white" ? "white" : "black"}
+      stroke={strokeColor}
       />
     </svg>
   );
