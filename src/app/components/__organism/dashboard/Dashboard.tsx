@@ -1,4 +1,5 @@
 import Gallery from "../gallery/Gallery";
+import Info from "../info/Info";
 import Slider from "../slider/Slider";
 
 const Dashboard = () => {
@@ -6,6 +7,7 @@ const Dashboard = () => {
     <div className="w-full ">
       <Gallery />
       <Slider />
+      <Info />
     </div>
   );
 };
