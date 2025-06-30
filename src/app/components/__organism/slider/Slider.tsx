@@ -7,13 +7,13 @@
 //         (img, i) => {
 //           return (
 //             <div key={i} className="relative w-full h-[375px] md:h-[500px]">
-//               <Image 
-//                 src={`/assets/${img}`} 
+//               <Image
+//                 src={`/assets/${img}`}
 //                 alt={`Bitmap ${i + 1}`}
 //                 fill
 //                 sizes="(max-width: 768px) 375px, (max-width: 1024px) 389px, 360px"
 //                 className="object-cover"
-//                 priority={i < 2} 
+//                 priority={i < 2}
 //               />
 //             </div>
 //           );
@@ -25,46 +25,52 @@
 
 // export default Slider;
 
-
-
-
 import Image from "next/image";
+import { Badge } from "../../__molecules";
+import { sliderData } from "@/app/common/data";
+
+
+export type sliderDataType = {
+  title: string;
+  subText: string;
+  src: string;
+}[];
 
 const Slider = () => {
-  const images = ["home_4.png", "home_5.png", "home_6.png", "home_7.png"];
-  
+
+
   return (
-    <section className="w-full h-full bg-green-400">
+    <section className="w-full h-full">
       {/* Mobile and Tablet: Grid Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:hidden">
-        {images.map((img, i) => (
+        {sliderData.map((item, i) => (
           <div key={i} className="relative w-full h-[375px] md:h-[500px]">
-            <Image 
-              src={`/assets/${img}`} 
+            <Image
+              src={`/assets/${item.src}`}
               alt={`Bitmap ${i + 1}`}
               fill
               sizes="(max-width: 768px) 375px, (max-width: 1024px) 389px"
               className="object-cover"
               priority={i < 2}
             />
+            <Badge subText={item.subText} title={item.title} />
           </div>
         ))}
       </div>
 
-      {/* Large Screen: Infinite Scroll */}
       <div className="hidden lg:block overflow-hidden h-[500px]">
         <div className="flex lg:animate-loop-scroll">
-          {/* Duplicate images for seamless loop */}
-          {[...images, ...images].map((img, i) => (
+          {[...sliderData, ...sliderData].map((item, i) => (
             <div key={i} className="relative flex-shrink-0 w-[360px] h-[500px]">
-              <Image 
-                src={`/assets/${img}`} 
-                alt={`Bitmap ${(i % images.length) + 1}`}
+              <Image
+                src={`/assets/${item.src}`}
+                alt={item.title}
                 fill
                 sizes="360px"
                 className="object-cover"
-                priority={i < 4}
+                priority={i < sliderData.length}
               />
+              <Badge subText={item.subText} title={item.title} />
             </div>
           ))}
         </div>

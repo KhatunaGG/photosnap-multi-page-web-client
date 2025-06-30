@@ -31,18 +31,6 @@ const FadeSwiper = ({
       speed={speed}
       className={`w-full h-full ${className}`}
     >
-      {/* {images.map((img, i) => (
-        <SwiperSlide key={i} className="relative w-full h-full">
-          <Image
-            src={img.src}
-            alt={img.alt || `Slide ${i + 1}`}
-            fill
-            priority
-            style={{ objectFit: "cover" }}
-            className="absolute inset-0"
-          />
-        </SwiperSlide>
-      ))} */}
       {images
         .filter((img) => img.src && img.src.trim() !== "")
         .map((img, i) => (
