@@ -28,7 +28,11 @@ const Footer = () => {
                 <Logo />
                 <div className="w-full md:w-fit flex md:hidden lg:flex h-8 items-center justify-center gap-4">
                   {Object.entries(iconMap).map(([key, IconComponent]) => (
-                    <Link href={"#"} className="cursor-pointer hover:scale-105 transition-colors duration-300 ease-out " key={key}>
+                    <Link
+                      href={"#"}
+                      className="cursor-pointer hover:scale-105 transition-colors duration-300 ease-out "
+                      key={key}
+                    >
                       <IconComponent key={key} />
                     </Link>
                   ))}
@@ -46,7 +50,11 @@ const Footer = () => {
               </div>
               <div className="hidden md:flex lg:hidden h-8 gap-4 ">
                 {Object.entries(iconMap).map(([key, IconComponent]) => (
-                  <Link href={"#"} className="cursor-pointer hover:scale-105 transition-colors duration-300 ease-out " key={key}>
+                  <Link
+                    href={"#"}
+                    className="cursor-pointer hover:scale-105 transition-colors duration-300 ease-out "
+                    key={key}
+                  >
                     <IconComponent key={key} />
                   </Link>
                 ))}
@@ -58,7 +66,9 @@ const Footer = () => {
         <div className="DIV2  w-full  md:flex-1 ">
           <div className="w-full h-full flex flex-col gap-[34px] md:gap-0 items-center justify-between md:items-end ">
             <div className="flex flex-row items-center gap-4">
-              <p className="font-bold text-xs tracking-[2px] cursor-pointer hover:text-white/40 hover:scale-105 transition-colors duration-300 ease-out ">GET AN INVITE</p>
+              <p className="font-bold text-xs tracking-[2px] cursor-pointer hover:text-white/40 hover:scale-105 transition-colors duration-300 ease-out ">
+                GET AN INVITE
+              </p>
               <ArrowRight textColor="text-white" />
             </div>
             <p className="font-normal text-[15px] text-white/40">
