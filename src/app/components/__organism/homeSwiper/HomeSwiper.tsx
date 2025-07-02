@@ -42,6 +42,7 @@ const FadeSwiper = ({
               priority
               style={{ objectFit: "cover" }}
               className="absolute inset-0"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 360px"
             />
           </SwiperSlide>
         ))}

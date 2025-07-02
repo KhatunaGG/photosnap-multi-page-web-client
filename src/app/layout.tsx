@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Nav } from "./components/__organism";
+import Footer from "./components/__organism/footer/Footer";
 
 const dm = DM_Sans({
   variable: "--font-dm-sans",
@@ -21,9 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dm.variable}  antialiased flex flex-col min-h-screen`}>
+      <body className={`${dm.variable} antialiased flex flex-col`}>
         <Nav />
-        {children}
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );

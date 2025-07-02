@@ -1,10 +1,11 @@
-import { StoriesSection } from "@/app/components/__organism";
+import { StoriesSection, StoryGallery } from "@/app/components/__organism";
 import React from "react";
 
-export default function page() {
+export default function Page() {
   return (
-    <main className="w-full   min-h-[calc(100vh-72px)] md:min-h-[calc(100vh-74px)]">
+    <div className="w-full flex flex-col min-h-screen">
       <StoriesSection />
-    </main>
+      <StoryGallery />
+    </div>
   );
 }
