@@ -20,7 +20,6 @@ export const pageInfo = [
   },
 ];
 
-
 export const sliderData = [
   {
     title: "The Mountains",
@@ -43,8 +42,6 @@ export const sliderData = [
     src: "home_7.png",
   },
 ];
-
-
 
 export const sections = [
   {
@@ -100,5 +97,106 @@ export const sections = [
     ],
     textOrder: "order-2 md:order-none",
     imageOrder: "order-1 md:order-1",
+  },
+];
+
+export const storyGalleryData = [
+  {
+    date: "April 16th 2020",
+    title: "The Mountains",
+    subText: "by John Appleseed",
+    src: "home_4.png",
+  },
+  {
+    date: "April 14th 2020",
+    title: "Sunset Cityscapes",
+    subText: "by Benjamin Cruz",
+    src: "home_5.png",
+  },
+  {
+    date: "April 11th 2020",
+    title: "18 Days Voyage",
+    subText: "by Alexei Borodin",
+    src: "home_6.png",
+  },
+  {
+    date: "April 9th 2020",
+    title: "Architecturals",
+    subText: "by Samantha Brooke",
+    src: "home_7.png",
+  },
+  {
+    date: "April 7th 2020",
+    title: "World Tour 2019",
+    subText: "by Timothy Wagner",
+    src: "story_1.png",
+  },
+  {
+    date: "April 3rd 2020",
+    title: "Unforeseen Corners",
+    subText: "by William Malcolm",
+    src: "story_2.png",
+  },
+  {
+    date: "March 29th 2020",
+    title: "King on Africa: Part II",
+    subText: "by Tim Hillenburg",
+    src: "story_3.png",
+  },
+  {
+    date: "March 21st 2020",
+    title: "The Trip to Nowhere",
+    subText: "by Felicia Rourke",
+    src: "story_4.png",
+  },
+  {
+    date: "March 19th 2020",
+    title: "Rage of The Sea",
+    subText: "by Mohammed Abdul",
+    src: "story_5.png",
+  },
+  {
+    date: "March 16th 2020",
+    title: "Running Free",
+    subText: "by Michelle",
+    src: "story_6.png",
+  },
+
+  {
+    date: "March 11th 2020",
+    title: "Behind the Waves",
+    subText: "by Lamarr Wilson",
+    src: "story_7.png",
+  },
+
+  {
+    date: "March 9th 2020",
+    title: "Calm Waters",
+    subText: "by Samantha Brooke",
+    src: "story_8.png",
+  },
+  {
+    date: "March 5th 2020",
+    title: "The Milky Way",
+    subText: "by Benjamin Cruz",
+    src: "story_9.png",
+  },
+  {
+    date: "March 4th 2020",
+    title: "Night at The Dark Forest",
+    subText: "by Mohammed Abdul",
+    src: "story_10.png",
+  },
+  {
+    date: "March 1st 2020",
+    title: "Somwarpet’s Beauty",
+    subText: "by Michelle",
+    src: "story_11.png",
+  },
+  {
+    date: "February 25th 2020",
+    title: "Land of Dreams",
+    subText: "by William Malcolm",
+    src: "story_12.png",
   },
 ];
