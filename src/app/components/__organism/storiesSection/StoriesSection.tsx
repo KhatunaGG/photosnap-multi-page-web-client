@@ -4,9 +4,9 @@ import { ArrowRight } from "../../__atoms";
 
 const StoriesSection = () => {
   return (
-    <section className="w-full bg-yellow-100">
+    <section className="w-full ">
       <div className="flex flex-col md:relative w-full min-h-[calc(100vh-72px)] lg:min-h-[calc(100vh-74px)]">
-        <div className="  relative w-full h-[317px] md:h-[650px] lg:min-h-[calc(100vh-74px)]">
+        <div className="relative w-full h-[317px] md:h-[650px] lg:min-h-[calc(100vh-74px)]">
           <Image
             src="/assets/stories_banner.jpg"
             alt="Stories Banner"

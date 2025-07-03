@@ -6,3 +6,5 @@ export { default as Slider } from "./slider/Slider";
 export { default as Info } from "./info/Info";
 export { default as StoriesSection } from "./storiesSection/StoriesSection";
 export { default as StoryGallery } from "./storyGallery/StoryGallery";
+export { default as FeaturesSection } from "./featuresSection/FeaturesSection";
+export { default as InviteBanner } from "./inviteBanner/InviteBanner";

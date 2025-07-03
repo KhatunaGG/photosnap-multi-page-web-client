@@ -18,6 +18,25 @@ export const pageInfo = [
     content:
       "Our tool Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.",
   },
+  {
+    iconName: "Domain",
+    subText: "Custom Domain",
+    content:
+      "With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!",
+  },
+
+  {
+    iconName: "Exposure",
+    subText: "Boost Your Exposure",
+    content:
+      "Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.",
+  },
+  {
+    iconName: "DragDrop",
+    subText: "Drag & Drop Image",
+    content:
+      "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.",
+  },
 ];
 
 export const sliderData = [
@@ -97,6 +116,21 @@ export const sections = [
     ],
     textOrder: "order-2 md:order-none",
     imageOrder: "order-1 md:order-1",
+  },
+
+  {
+    id: "DIV_4",
+    bgColor: "bg-black",
+    textColor: "text-white",
+    content: {
+      title: "features",
+      description:
+        "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.",
+      cta: "",
+    },
+    images: [{ src: "/assets/features_1.png", alt: "features image 1" }],
+    textOrder: "order-2 md:order-none",
+    imageOrder: "order-1 md:order-none",
   },
 ];
 
