@@ -38,7 +38,7 @@ const Footer = () => {
                   ))}
                 </div>
               </div>
-              <div className="  w-full md:w-auto         flex flex-col gap-[19px] md:flex-row md:gap-[26px] lg:flex-col lg:gap-[19px]">
+              <div className="  w-full md:w-auto flex flex-col gap-[19px] md:flex-row md:gap-[26px] lg:flex-col lg:gap-[19px]">
                 {["home", "stories", "features", "pricing"].map((item, i) => (
                   <p
                     className="text-xs md:text-sm font-bold translate-[2px] uppercase cursor-pointer hover:text-white/40 hover:scale-105 transition-colors duration-300 ease-out "

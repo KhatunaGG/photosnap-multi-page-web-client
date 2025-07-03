@@ -9,3 +9,10 @@ export { default as Twitter } from "./twitter/Twitter"
 export { default as Youtube } from "./youtube/Youtube"
 export { default as Facebook } from "./facebook/Facebook"
 export { default as Pinterest } from "./pinterest/Pinterest"
+export { default as DragDrop } from "./dragDrop/DragDrop"
+export { default as Exposure } from "./exposure/Exposure"
+export { default as Domain } from "./domain/Domain"
+
+
+
+

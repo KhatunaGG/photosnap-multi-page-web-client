@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 const Nav = () => {
   const pathname = usePathname();
 
-  const navItems = ["stories", "feature", "pricing"];
+  const navItems = ["stories", "features", "pricing"];
 
   return (
     <div className="w-full px-6 md:px-[39px] lg:px-[165px] py-[28px] md:py-4 flex items-center justify-between">
