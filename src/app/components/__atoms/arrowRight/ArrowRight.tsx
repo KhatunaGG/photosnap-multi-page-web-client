@@ -2,7 +2,6 @@ import React from "react";
 
 export type ArrowRightPropsType = {
   textColor?: string;
-
 };
 
 const ArrowRight = ({ textColor }: ArrowRightPropsType) => {
@@ -17,12 +16,10 @@ const ArrowRight = ({ textColor }: ArrowRightPropsType) => {
     >
       <path
         d="M0 7H41.864"
-        // stroke="white"
         stroke={strokeColor}
       />
       <path
         d="M35.4282 1L41.4282 7L35.4282 13"
-        // stroke="white"
       stroke={strokeColor}
       />
     </svg>

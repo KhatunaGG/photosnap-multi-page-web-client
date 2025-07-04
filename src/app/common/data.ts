@@ -132,6 +132,20 @@ export const sections = [
     textOrder: "order-2 md:order-none",
     imageOrder: "order-1 md:order-none",
   },
+  {
+    id: "DIV_5",
+    bgColor: "bg-black",
+    textColor: "text-white",
+    content: {
+      title: "pricing",
+      description:
+        "Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.",
+      cta: "",
+    },
+    images: [{ src: "/assets/pricing_1.jpg", alt: "Pricing image 1" }],
+    textOrder: "order-2 md:order-none",
+    imageOrder: "order-1 md:order-none",
+  },
 ];
 
 export const storyGalleryData = [
@@ -232,5 +246,29 @@ export const storyGalleryData = [
     title: "Land of Dreams",
     subText: "by William Malcolm",
     src: "story_12.png",
+  },
+];
+
+export const plans = [
+  {
+    title: "Basic",
+    description:
+      "Includes basic usage of our platform. Recommended for new and aspiring photographers.",
+    price: "19.00",
+    billing: "per month",
+  },
+  {
+    title: "Pro",
+    description:
+      "More advanced features available. Recommended for photography veterans and professionals.",
+    price: "39.00",
+    billing: "per month",
+  },
+  {
+    title: "Business",
+    description:
+      "Additional features available such as more detailed metrics. Recommended for business owners.",
+    price: "99.00",
+    billing: "per month",
   },
 ];

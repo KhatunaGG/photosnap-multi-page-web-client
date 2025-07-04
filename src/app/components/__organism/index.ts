@@ -8,3 +8,5 @@ export { default as StoriesSection } from "./storiesSection/StoriesSection";
 export { default as StoryGallery } from "./storyGallery/StoryGallery";
 export { default as FeaturesSection } from "./featuresSection/FeaturesSection";
 export { default as InviteBanner } from "./inviteBanner/InviteBanner";
+export { default as PricingSection } from "./pricingSection/PricingSection";
+export { default as TogglePrice } from "./togglePrice/TogglePrice";
