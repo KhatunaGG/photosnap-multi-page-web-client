@@ -35,4 +35,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
-
+.glassy-bar {
+  background-color: rgba(0, 0, 0, 0.2); /* allows blur and shadows to show */
+  backdrop-filter: blur(67.49px);
+  -webkit-backdrop-filter: blur(67.49px);
+  box-shadow:
+    -16.87px 8.44px 25.31px 8.44px #576BFF2E inset,
+    0px -8.44px 25.31px 8.44px #BF44CF05 inset;
+}

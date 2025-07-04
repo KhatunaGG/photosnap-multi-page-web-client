@@ -37,6 +37,7 @@ export type GalleryItemPropsType = {
   textOrder: string;
   imageOrder: string;
   isFeaturesSectionPage?: boolean;
+  isPricingPage?: boolean;
 };
 
 const GalleryItem: React.FC<GalleryItemPropsType> = ({
@@ -48,6 +49,7 @@ const GalleryItem: React.FC<GalleryItemPropsType> = ({
   textOrder,
   imageOrder,
   isFeaturesSectionPage,
+  isPricingPage
 }) => {
   return (
     <div key={id} className={`${id} w-full flex flex-col md:flex-row`}>
@@ -68,7 +70,7 @@ const GalleryItem: React.FC<GalleryItemPropsType> = ({
             {content.description}
           </p>
         </div>
-        {!isFeaturesSectionPage && (
+        {(!isFeaturesSectionPage && !isPricingPage) && (
           <div className="flex gap-[18px]">
             <h4
               className={`uppercase heading-h4 cursor-pointer transition-colors duration-300 ease-out hover:scale-105 ${

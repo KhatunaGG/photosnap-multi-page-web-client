@@ -12,15 +12,13 @@ const FeaturesSection = () => {
   );
 
   return (
-    <div className="w-full        ">
+    <div className="w-full">
       {featuresData && (
         <GalleryItem
           {...featuresData}
           isFeaturesSectionPage={isFeaturesSectionPage}
         />
       )}
-
-    
     </div>
   );
 };
