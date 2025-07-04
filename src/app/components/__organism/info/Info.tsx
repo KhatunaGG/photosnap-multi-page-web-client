@@ -87,7 +87,7 @@ const Info = () => {
   const dataToRender = isFeaturesSectionPage ? pageInfo : pageInfo.slice(0, 4);
 
   return (
-    <section className="w-full py-20 px-[8.8%] md:px-[20.18%] md:py-[120px] lg:px-[11.45%]">
+    <section className="w-full py-20 px-[8.8%] md:px-[20.18%] md:py-[120px] lg:px-[11.45%]        ">
       <div
         className={`${
           isFeaturesSectionPage
