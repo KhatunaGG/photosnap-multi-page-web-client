@@ -3,7 +3,7 @@ import { ArrowRight } from "../../__atoms";
 
 const InviteBanner = () => {
   return (
-    <section className="w-full">
+    <section className="w-full                       ">
       <div className="w-full flex flex-col relative">
         <div className="relative w-full h-[288px] md:h-[280px]">
           <Image

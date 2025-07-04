@@ -3,6 +3,9 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Nav } from "./components/__organism";
 import Footer from "./components/__organism/footer/Footer";
+import ReactLenis from "lenis/react";
+// import  {ReactLenis } from '@/utils/lenis'
+
 
 const dm = DM_Sans({
   variable: "--font-dm-sans",
@@ -22,11 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dm.variable} antialiased flex flex-col`}>
-        <Nav />
-        <main className="flex-1">{children}</main>
-        <Footer />
-      </body>
+      <ReactLenis root>
+        <body className={`${dm.variable} antialiased flex flex-col`}>
+          <Nav />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </body>
+      </ReactLenis>
     </html>
   );
 }
