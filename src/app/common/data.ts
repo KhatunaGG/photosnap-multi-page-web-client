@@ -254,21 +254,79 @@ export const plans = [
     title: "Basic",
     description:
       "Includes basic usage of our platform. Recommended for new and aspiring photographers.",
-    price: "19.00",
+    priceMonthly: "19.00",
     billing: "per month",
+
+    perYear: "per year",
+    priceYearly: "190.00",
   },
   {
     title: "Pro",
     description:
       "More advanced features available. Recommended for photography veterans and professionals.",
-    price: "39.00",
+    priceMonthly: "39.00",
     billing: "per month",
+    perYear: "per year",
+    priceYearly: "390.00",
   },
   {
     title: "Business",
     description:
       "Additional features available such as more detailed metrics. Recommended for business owners.",
-    price: "99.00",
+    priceMonthly: "99.00",
     billing: "per month",
+    perYear: "per year",
+    priceYearly: "990.00",
+  },
+];
+
+export const compareData = [
+  {
+    feature: "UNLIMITED STORY POSTING",
+    basic: true,
+    pro: true,
+    business: true,
+  },
+  {
+    feature: "UNLIMITED PHOTO UPLOAD",
+    basic: true,
+    pro: true,
+    business: true,
+  },
+  {
+    feature: "EMBEDDING CUSTOM CONTENT",
+    basic: false,
+    pro: true,
+    business: true,
+  },
+  {
+    feature: "CUSTOMIZE METADATA",
+    basic: false,
+    pro: true,
+    business: true,
+  },
+  {
+    feature: "ADVANCED METRICS",
+    basic: false,
+    pro: false,
+    business: true,
+  },
+  {
+    feature: "PHOTO DOWNLOADS",
+    basic: false,
+    pro: false,
+    business: true,
+  },
+  {
+    feature: "SEARCH ENGINE INDEXING",
+    basic: false,
+    pro: false,
+    business: true,
+  },
+  {
+    feature: "CUSTOM ANALYTICS",
+    basic: false,
+    pro: false,
+    business: true,
   },
 ];

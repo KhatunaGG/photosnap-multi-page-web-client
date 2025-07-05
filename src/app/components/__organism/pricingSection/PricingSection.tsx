@@ -1,5 +1,4 @@
 "use client";
-
 import { sections } from "@/app/common/data";
 import { usePathname } from "next/navigation";
 import GalleryItem from "../galleryItem/GalleryItem";

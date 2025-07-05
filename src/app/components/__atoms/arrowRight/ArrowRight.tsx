@@ -1,8 +1,5 @@
+import { ArrowRightPropsType } from "@/app/interfaces/interfaces";
 import React from "react";
-
-export type ArrowRightPropsType = {
-  textColor?: string;
-};
 
 const ArrowRight = ({ textColor }: ArrowRightPropsType) => {
   const strokeColor = textColor === "text-white" ? "white" : "black";
@@ -14,14 +11,8 @@ const ArrowRight = ({ textColor }: ArrowRightPropsType) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M0 7H41.864"
-        stroke={strokeColor}
-      />
-      <path
-        d="M35.4282 1L41.4282 7L35.4282 13"
-      stroke={strokeColor}
-      />
+      <path d="M0 7H41.864" stroke={strokeColor} />
+      <path d="M35.4282 1L41.4282 7L35.4282 13" stroke={strokeColor} />
     </svg>
   );
 };

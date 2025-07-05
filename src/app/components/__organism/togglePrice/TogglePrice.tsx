@@ -1,44 +1,22 @@
+"use client";
 import { plans } from "@/app/common/data";
-import React from "react";
+import { useState } from "react";
 
-export type PlanTheme = "light" | "dark" | "gradient";
-
-export interface PlanData {
-  id: string;
-  title: string;
-  description: string;
-  price: string;
-  billing: string;
-
-}
 
 const TogglePrice = () => {
+  const [isYearly, setIsYearly] = useState(false);
+
+  const handleSwitchChange = (checked: boolean) => {
+    setIsYearly(checked);
+  };
+
   return (
     <section className="w-full flex flex-col gap-10 lg:gap-12  px-[8.8%] md:px-[5.07%]  lg:px-[11.45%] py-[64px] md:py-[112px] lg:pt-[120px] lgLpb-[160px]">
-      <div className="w-full flex items-center justify-center  gap-8 bg-gray-600">
+      <div className="w-full flex items-center justify-center  gap-8 ">
         <p className="font-bold text-[18px] leading-[25px] text-black">
           Monthly
         </p>
-
-
-        
-        <div className="w-[64px] h-8">
-            <label htmlFor="" className="b-[#DFDFDF] rounded-[50px] w-[64px] h-8">1
-
-
-            </label>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
+        {/* <Switch checked={isYearly} onCheckedChange={handleSwitchChange} /> */}
         <p className="font-bold text-[18px] leading-[25px] text-black">
           Yearly
         </p>
@@ -47,6 +25,8 @@ const TogglePrice = () => {
       <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-[30px]">
         {plans.map((plan, i) => {
           const isOddIndex = i % 2 !== 0;
+          const price = isYearly ? plan.priceYearly : plan.priceMonthly;
+          const billing = isYearly ? plan.perYear : plan.billing;
           return (
             <div
               className={`${
@@ -92,14 +72,14 @@ const TogglePrice = () => {
                         isOddIndex ? "text-white" : "text-black"
                       } font-bold text-black text-[40px] leading-[48px] tracking-[4.17px]`}
                     >
-                      ${plan.price}
+                      ${price}
                     </h1>
                     <p
                       className={`${
                         isOddIndex ? "text-white/60" : "text-black/60 "
                       } text-[15px] font-normal leading-[25px] `}
                     >
-                     {plan.billing}
+                      {billing}
                     </p>
                   </div>
                 </div>

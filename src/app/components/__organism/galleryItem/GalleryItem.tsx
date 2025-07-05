@@ -1,44 +1,7 @@
 "use client";
-
+import { GalleryItemPropsType } from "@/app/interfaces/interfaces";
 import { ArrowRight } from "../../__atoms";
 import HomeSwiper from "../homeSwiper/HomeSwiper";
-
-export type SectionDataType = {
-  id: string;
-  bgColor: string;
-  textColor: string;
-  content: {
-    title: string;
-    description: string;
-    cta: string;
-  };
-  images: {
-    src: string;
-    alt: string;
-  }[];
-  textOrder: string;
-  imageOrder: string;
-}[];
-
-// ✅ Properly define prop types
-export type GalleryItemPropsType = {
-  id: string;
-  bgColor: string;
-  textColor: string;
-  content: {
-    title: string;
-    description: string;
-    cta: string;
-  };
-  images: {
-    src: string;
-    alt: string;
-  }[];
-  textOrder: string;
-  imageOrder: string;
-  isFeaturesSectionPage?: boolean;
-  isPricingPage?: boolean;
-};
 
 const GalleryItem: React.FC<GalleryItemPropsType> = ({
   id,
@@ -49,7 +12,7 @@ const GalleryItem: React.FC<GalleryItemPropsType> = ({
   textOrder,
   imageOrder,
   isFeaturesSectionPage,
-  isPricingPage
+  isPricingPage,
 }) => {
   return (
     <div key={id} className={`${id} w-full flex flex-col md:flex-row`}>
@@ -70,7 +33,7 @@ const GalleryItem: React.FC<GalleryItemPropsType> = ({
             {content.description}
           </p>
         </div>
-        {(!isFeaturesSectionPage && !isPricingPage) && (
+        {!isFeaturesSectionPage && !isPricingPage && (
           <div className="flex gap-[18px]">
             <h4
               className={`uppercase heading-h4 cursor-pointer transition-colors duration-300 ease-out hover:scale-105 ${

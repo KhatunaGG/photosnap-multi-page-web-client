@@ -1,4 +1,5 @@
 import {
+  Compare,
   InviteBanner,
   PricingSection,
   TogglePrice,
@@ -10,6 +11,7 @@ const page = () => {
     <div className="w-full flex flex-col min-h-screen">
       <PricingSection />
       <TogglePrice />
+      <Compare />
       <InviteBanner />
     </div>
   );

@@ -1,11 +1,5 @@
-import React from "react";
 import { ArrowRight } from "../../__atoms";
-
-export type BadgePropsType = {
-  title: string;
-  subText: string;
-  date?: string;
-};
+import { BadgePropsType } from "@/app/interfaces/interfaces";
 
 const Badge = ({ title, subText, date }: BadgePropsType) => {
   return (

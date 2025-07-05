@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 
 const Nav = () => {
   const pathname = usePathname();
-
   const navItems = ["stories", "features", "pricing"];
 
   return (
