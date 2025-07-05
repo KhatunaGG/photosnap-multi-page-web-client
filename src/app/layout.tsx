@@ -4,7 +4,6 @@ import "./globals.css";
 import { Nav } from "./components/__organism";
 import Footer from "./components/__organism/footer/Footer";
 import ReactLenis from "lenis/react";
-// import  {ReactLenis } from '@/utils/lenis'
 
 
 const dm = DM_Sans({

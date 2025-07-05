@@ -8,7 +8,10 @@ const StoryGallery = () => {
       {storyGalleryData.map((item, i) => {
         const isFirst = i === 0;
         return (
-          <div key={i} className="relative w-full h-[375px] md:h-[500px] group overflow-hidden">
+          <div
+            key={i}
+            className="relative w-full h-[375px] md:h-[500px] group overflow-hidden"
+          >
             <Image
               src={`/assets/${item.src}`}
               alt={item.title}

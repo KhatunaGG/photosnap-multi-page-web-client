@@ -10,3 +10,6 @@ export { default as FeaturesSection } from "./featuresSection/FeaturesSection";
 export { default as InviteBanner } from "./inviteBanner/InviteBanner";
 export { default as PricingSection } from "./pricingSection/PricingSection";
 export { default as TogglePrice } from "./togglePrice/TogglePrice";
+export { default as Compare } from "./compare/Compare";
+export { default as CompareItem } from "./compareItem/CompareItem"
+export { default as CompareHeader } from "./compareHeader/CompareHeader"

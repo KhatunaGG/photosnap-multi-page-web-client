@@ -2,12 +2,6 @@ import Image from "next/image";
 import { Badge } from "../../__molecules";
 import { sliderData } from "@/app/common/data";
 
-export type sliderDataType = {
-  title: string;
-  subText: string;
-  src: string;
-}[];
-
 const Slider = () => {
   return (
     <section className="w-full h-full">
